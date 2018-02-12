@@ -3,6 +3,8 @@ var parser = require('body-parser');
 
 var app = new express();
 
+require('./database.js');
+
 app.get('/', function(req, res) {
    res.render('./../app/index.ejs', {});
 })
